@@ -1,33 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span class="ml-3 text-xl">Tailblocks</span>
-    </a>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900">First Link</a>
-      <a class="mr-5 hover:text-gray-900">Second Link</a>
-      <a class="mr-5 hover:text-gray-900">Third Link</a>
-      <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-    </nav>
-    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-    </button>
+
+  <!-- NAV BAR START  -->
+
+  <div class="bg-transparent">
+    <header class=" inset-x-0 top-0 z-50">
+      <nav aria-label="Global" class="flex items-center justify-around p-6 lg:px-50">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">NEXCENT</span>
+            <img src="./images/SiteLogo.png" alt="" class="h-8 w-auto logo" />
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" command="show-modal" commandfor="mobile-menu"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-6">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden list lg:flex lg:gap-x-12 items-center">
+          <a href="#" class="text-sm/6 font-semibold style">About</a>
+          <a href="#" class="text-sm/6 font-semibold style">Features</a>
+          <a href="#" class="text-sm/6 font-semibold style">Pricing</a>
+          <a href="#" class="text-sm/6 font-semibold style">Gallery</a>
+          <a href="#" class="text-sm/6 font-semibold style">Team</a>
+          <a href="#" class="text-sm/6 font-semibold btn style text-grey-500 green px-5 py-2 rounded-[5px]">Contact
+            us<span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+      </nav>
+      <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+          <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel
+              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-grey-400 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Your Company</span>
+
+                </a>
+                <button type="button" command="close" commandfor="mobile-menu"
+                  class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Close menu</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="text-black" stroke-width="1.5" data-slot="icon"
+                    aria-hidden="true" class="size-6">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                  <div class="space-y-2 py-6 bgColor">
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50 text-center">Home</a>
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50 text-center">Features</a>
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50 text-center">Community</a>
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50 text-center">Blog</a>
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50 text-center">Prizing</a>
+                    <div class="flex justify-center ">
+                      <a href="#"
+                        class="w-40 text-base/6 font-semibold style text-white green px-5 py-2 rounded-[5px] text-center">Register
+                        Now<span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </el-dialog-panel>
+          </div>
+        </dialog>
+      </el-dialog>
+    </header>
   </div>
-</header>
+
+  <!-- NAV BAR END  -->
+
+
+  <!-- HERO-SECTION START  -->
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="firstclr title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Launch your own online<br>Learning platform</h1>
+        <h1 class="secondclr title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">for FREE</h1>
+        <p class="mt-8 leading-relaxed">Top teacher from around the world teach thousands of students.</p>
+        <p class="mb-8 leading-relaxed" >Get unlimited access to 1000+ courses</p>
+        <div class="flex justify-center">
+          <button
+            class=" px-15 py-4 text-white text-lg rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg hover:opacity-90 btn2">Get started</button>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class=" h-150 w-700 " alt="hero" src="./images/PixelBook Go.png">
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO-SECTION END  -->
+
+
+
+
+  </section>
 </body>
+
 </html>

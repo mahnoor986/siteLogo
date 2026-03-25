@@ -1,0 +1,92 @@
+
+
+@font-face {
+    font-family: roboto;
+    src: url(./fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+
+
+.btn {
+    border: 2px solid;
+    border-image: linear-gradient(#4776E6, #8E54E9) 1;
+    border-radius: 5px;
+    font-family: roboto;
+    width: 150;
+    height: 40;
+    top: 32px;
+    left: 1173px;
+    gap: 10px;
+    opacity: 1;
+    border-width: 2px;
+    padding-top: 5px;
+    padding-right: 26px;
+    padding-bottom: 5px;
+    padding-left: 26px;
+
+}
+
+.style {
+    font-family: roboto;
+}
+
+.logo {
+    width: 116;
+    height: 26;
+    top: 39px;
+    left: 117px;
+    gap: 10px;
+    opacity: 1;
+
+}
+
+.list {
+    width: 405;
+    height: 19;
+    top: 43px;
+    left: 683px;
+    gap: 40px;
+    opacity: 1;
+
+}
+
+section .container p {
+    color: #505258;
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0%;
+
+}
+
+section .container .firstclr {
+    color: #31135E;
+    font-size: 52px;
+    font-weight: 700;
+    font-style: bold;
+    font-family: roboto;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+section .container .secondclr {
+    color: #AF52DE;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 52px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+/* .btn2{
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    padding-left: 26px;
+    padding-right: 26px;
+   border: none;
+   color: white;
+    background: linear-gradient(#4776E6, #8E54E9) 1;
+    border-radius: 5px;
+} */
