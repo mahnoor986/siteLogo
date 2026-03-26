@@ -6,7 +6,17 @@
 }
 
 
+.gradient-bg{
+    /* background: linear-gradient(135deg, #f3e8ff 0%, #d9c6ff 50%, #c084fc 100%,); */
+    position: relative;
+}
 
+
+.img{
+    position: absolute;
+    right:30px;
+    top: 170px;
+}
 .style {
     font-family: roboto;
 }
