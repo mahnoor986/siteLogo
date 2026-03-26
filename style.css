@@ -7,25 +7,6 @@
 
 
 
-.btn {
-    border: 2px solid;
-    border-image: linear-gradient(#4776E6, #8E54E9) 1;
-    border-radius: 5px;
-    font-family: roboto;
-    width: 150;
-    height: 40;
-    top: 32px;
-    left: 1173px;
-    gap: 10px;
-    opacity: 1;
-    border-width: 2px;
-    padding-top: 5px;
-    padding-right: 26px;
-    padding-bottom: 5px;
-    padding-left: 26px;
-
-}
-
 .style {
     font-family: roboto;
 }
